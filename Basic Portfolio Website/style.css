@@ -1,0 +1,466 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Style */
+body {
+    background: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+h1 span {
+    font-weight: 500;
+}
+
+h2, h3, h4 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+p {
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+button, input[type="submit"] {
+    margin: 1rem auto;
+    display: block;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button, input[type="submit"]:hover {
+    background: #fff;
+    color: #000;
+}
+
+button i, input[type="submit"] i {
+    margin-right: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+input, textarea {
+    margin: 1rem auto;
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px 2px #ddd;
+}
+
+::placeholder {
+    color: #ccc;
+    font-weight: 300;
+}
+
+/* Container */
+.container {
+    max-width: 120rem;
+    margin: auto;
+    width: 95%;
+}
+
+/* Hero Section */
+#hero {
+    background: url(img/hero-bg.jpg) no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 span {
+    color: #000;
+}
+
+#hero .cta {
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#hero .cta:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Navigation */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.nav-list a {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Service Section */
+#services {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+#services .service-top {
+    padding: 0 1rem;
+}
+
+#services .service-top h1 {
+    max-width: 50rem;
+    margin: 2rem auto;
+}
+
+#services .service-top p {
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+#services .service-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#services .service-item {
+    flex: 1;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+#services .service-item .icon {
+    width: 10rem; /* Set the width and height of the circular image */
+    height: 10rem;
+    margin: auto;
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#services .service-item .icon img {
+    width: 100%; /* Make the image fill the circular container */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Zoom and crop the image */
+}
+
+#services .service-item .icon:hover {
+    transform: scale(1.1);
+}
+
+/* Projects Section */
+#projects {
+    background: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#projects .projects-header {
+    padding: 0 1rem;
+}
+
+#projects .projects-header h1 {
+    max-width: 25rem;
+}
+
+#projects .all-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+#projects .project-item {
+    width: 100%;
+    max-width: 45rem;
+    margin-bottom: 1rem;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#projects .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+#projects .project-item .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+#projects .project-item .project-info {
+    padding: 1rem;
+}
+
+#projects .project-item h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+#projects .project-item h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+#about {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+#about .about-top {
+    padding: 0 1rem;
+}
+
+#about .about-top h1 {
+    max-width: 40rem;
+}
+
+#about .about-top p {
+    max-width: 40rem;
+    margin: 2rem auto;
+}
+
+#about .about-bottom {
+    padding: 0 1rem;
+}
+
+#about .about-bottom h1 {
+    max-width: 40rem;
+}
+
+#about .about-bottom .core-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about .about-bottom .core-skills .core-skill-item {
+    width: 31%;
+    margin-bottom: 1rem;
+}
+
+#about .about-bottom .core-skills .core-skill-item h2 {
+    margin-bottom: 1rem;
+}
+
+#about .about-bottom .core-skills .core-skill-item .skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .about-bottom .core-skills .core-skill-item .skill-info .skill {
+    width: 80%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+#about .about-bottom .core-skills .core-skill-item .skill-info .skill-name p {
+    margin-bottom: 1rem;
+}
+
+#about .about-bottom .core-skills .core-skill-item .skill-info .skill {
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#about .about-bottom .core-skills .core-skill-item .skill-info .skill {
+    height: 10px;
+    background-image: linear-gradient(to right, #ff007a 0%, #ff9966 100%);
+    clip-path: ellipse(100% 50% at 100% 50%);
+}
+
+/* Contact Section */
+#contact {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+#contact .contact .contact-top {
+    padding: 0 1rem;
+}
+
+#contact .contact .contact-top h1 {
+    max-width: 40rem;
+    margin-bottom: 1rem;
+}
+
+#contact .contact .contact-top p {
+    max-width: 40rem;
+    margin-bottom: 3rem;
+}
+
+#contact .contact .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+#contact .contact .info .info-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Form */
+#contact .contact .contact-top form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contact .contact-top form input,
+#contact .contact .contact-top form textarea {
+    margin-bottom: 2rem;
+}
+
+/* Footer Section */
+#footer {
+    background: #000;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#footer h1 {
+    margin-bottom: 1rem;
+}
+
+#footer h1 span {
+    color: #ff007a;
+}
+
+#footer .social-icon {
+    margin-top: 1rem;
+}
+
+#footer .social-item {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+#footer .social-item img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+}
+
+#footer .social-item img:hover {
+    transform: scale(1.2);
+}
+
+#footer p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    #header .nav-list li {
+        padding: 0 0.5rem;
+    }
+
+    #projects .projects-header h1 {
+        max-width: 100%;
+    }
+
+    #projects .project-item {
+        width: 100%;
+    }
+
+    #about .about-top h1 {
+        max-width: 100%;
+    }
+
+    #about .about-top p {
+        max-width: 100%;
+    }
+
+    #about .about-bottom .core-skills .core-skill-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #contact .contact form input,
+    #contact .contact form textarea {
+        padding: 0.5rem 1rem;
+    }
+}
