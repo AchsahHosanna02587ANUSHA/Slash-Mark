@@ -1,0 +1,166 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.weather-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-input h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.city-input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-btn,
+.location-btn {
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover,
+.location-btn:hover {
+    background-color: #2980b9; /* Darker Blue */
+}
+
+.separator {
+    margin: 15px 0;
+    text-align: center;
+    color: #999;
+}
+
+.weather-data {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+}
+
+.days-forecast {
+    margin-top: 20px;
+}
+
+.days-forecast h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-cards {
+    list-style-type: none;
+    padding: 0;
+}
+
+.weather-cards .card {
+    background-color: #ecf0f1; /* Light Gray */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease;
+}
+
+.weather-cards .card img {
+    width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Additional Colors */
+.card {
+    background-color: #f9e79f; /* Sunflower Yellow */
+}
+
+.card:hover {
+    background-color: #f4d03f; /* Brighter Sunflower Yellow */
+}
+
+.header-underline {
+    border-bottom: 2px solid #1abc9c; /* Turquoise */
+}
+
+.header-underline:hover {
+    border-bottom: 2px solid #16a085; /* Darker Turquoise */
+}
+
+.search-btn {
+    background-color: #9b59b6; /* Amethyst Purple */
+}
+
+.search-btn:hover {
+    background-color: #8e44ad; /* Darker Amethyst Purple */
+}
+
+.location-btn {
+    background-color: #3498db; /* Peter River Blue */
+}
+
+.location-btn:hover {
+    background-color: #2980b9; /* Darker Peter River Blue */
+}
+
+.separator {
+    color: #e74c3c; /* Alizarin Red */
+}
+
+.weather-data {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly Transparent White */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Softer Shadow */
+}
+
